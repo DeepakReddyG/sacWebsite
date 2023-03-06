@@ -1,0 +1,16 @@
+.NavBarContainer {
+    display: flex;
+    background-color: rgb(169, 18, 39);
+}
+.logo {
+    color: white;
+}
+.index ul {
+    list-style: none;
+}
+.index li {
+    display: inline;
+}
+.links {
+    text-decoration: none;
+}
