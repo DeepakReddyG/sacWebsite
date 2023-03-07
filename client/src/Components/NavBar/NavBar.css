@@ -1,16 +1,43 @@
+.NavBarComponent * {
+    padding: 0;
+    margin: 0;
+}
 .NavBarContainer {
     display: flex;
     background-color: rgb(169, 18, 39);
+    padding: 10px 0px 10px 0px;
 }
 .logo {
     color: white;
 }
-.index ul {
-    list-style: none;
+.logo p {
+    font-weight: 500;
 }
-.index li {
-    display: inline;
+
+.NavBarTwo {
+    display: flex;
+    padding: 10px 0px 10px 0px;
 }
-.links {
+.NavBarTwo-one {
+    width: 20%;
+    margin-left: 30px;
+}
+.NavBarTwo-one img {
+    width: 80%;
+}
+.NavThreeInner {
+    background-color: black;
+    padding: 10px 0px 10px 0px;
+}
+.NavThreeInner .links {
     text-decoration: none;
+    color: white;
+}
+.NavThreeInner ul {
+
+}
+.NavThreeInner li {
+    display: inline;
+    margin: 0px 10px 0px 10px;
+    font-weight: 600;
 }
