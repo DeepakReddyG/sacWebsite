@@ -11,7 +11,7 @@ const NavBar = () => {
     <div className='NavBarComponent'>
         <div className="NavBarContainer">
             <div className="logo">
-                <p>Koneru Lakshmaiah Education Foundation | Student Activity Center</p>
+                <p>Koneru Lakshmaiah Education Foundation | Student Activity Center - Coding School</p>
             </div>
         </div>
         <div className="NavBarTwo">
