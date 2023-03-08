@@ -5,11 +5,11 @@ const Footer = () => {
   return (
     <div className='FooterComponent'>
       <div className="FooterContainer">
-        <div className="Footer-one">
-
+        <div className="FooterOne">
+          <h3>Koneru Lakshmaiah Education Foundation <br />Student Activity Center</h3>
         </div>
-        <div className="Footer-two">
-          
+        <div className="FooterTwo">
+
         </div>
       </div>
     </div>

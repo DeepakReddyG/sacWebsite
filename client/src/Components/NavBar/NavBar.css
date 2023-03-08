@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap'); 
+
 .NavBarComponent * {
     padding: 0;
     margin: 0;
@@ -18,6 +20,7 @@
 .NavBarTwo {
     display: flex;
     padding: 10px 0px 10px 0px;
+    background-color: rgb(237, 235, 235);
 }
 .NavBarTwo-one {
     width: 20%;
@@ -25,6 +28,24 @@
 }
 .NavBarTwo-one img {
     width: 80%;
+}
+.NavBarTwo-two {
+    width: 50%;
+}
+.NavBarTwo-two h1 {
+    color: rgb(107, 104, 104);
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+    margin-top: px;
+}
+.search {
+    width: 30%;
+}
+.search input {
+    margin-top: 25px;
+    padding: 5px;
+    border: 2px solid rgb(142, 139, 139);
+    border-radius: 5px;
 }
 .NavThreeInner {
     background-color: black;

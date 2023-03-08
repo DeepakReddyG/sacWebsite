@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter,
+import { 
   Routes,
   Route, 
   Link,
@@ -8,17 +8,18 @@ import { BrowserRouter,
 
 // import js files here
 import NavBar from './Components/NavBar/NavBar';
+import Footer from './Components/Footer/Footer'; 
+import Home from './Pages/HomePage/Home';
 
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
       <NavBar></NavBar>
-        <Routes>
-
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+      </Routes>
+      <Footer></Footer>
     </div>
   );
 }

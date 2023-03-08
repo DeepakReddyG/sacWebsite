@@ -11,12 +11,18 @@ const NavBar = () => {
     <div className='NavBarComponent'>
         <div className="NavBarContainer">
             <div className="logo">
-                <p>Koneru Lakshmaiah Education Foundation | Student Activity Center - Coding School</p>
+                <p>Koneru Lakshmaiah Education Foundation | Student Activity Center </p>
             </div>
         </div>
         <div className="NavBarTwo">
             <div className="NavBarTwo-one">
                 <img src={sac_logo} alt="" />
+            </div>
+            <div className="NavBarTwo-two">
+                <h1>The Coding School</h1>
+            </div>
+            <div className="NavBarTwo-three search">
+                <input type="text" placeholder='Search this site' />
             </div>
         </div>
         <div className="NavThree">
@@ -24,12 +30,12 @@ const NavBar = () => {
                 <center>
                 <ul>
                     <li><Link className='links'>Home</Link></li>
-                    <li><Link className='links'>Wings</Link></li>
-                    <li><Link className='links'>Technology</Link></li>
-                    <li><Link className='links'>LiberalArts</Link></li>
-                    <li><Link className='links'>SocialWings</Link></li>
-                    <li><Link className='links'>Academics</Link></li>
+                    <li><Link className='links'>Leadership</Link></li>
                     <li><Link className='links'>Activities</Link></li>
+                    <li><Link className='links'>Projects</Link></li>
+                    <li><Link className='links'>About</Link></li>
+                    <li><Link className='links'>Curriculum</Link></li>
+                    <li><Link className='links'>Contact</Link></li>
                 </ul>
                 </center>
             </div>
