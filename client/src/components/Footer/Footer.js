@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="FooterThree">
               <div className="FooterThree-one">
                 <span id='copyright'>
-                  <i class="fa fa-copyright" aria-hidden="true"></i> <p>Koneru Lakshmaiah Education Foundation - Student Activity Center | Developed by Coding School</p>
+                  <i class="fa fa-copyright" aria-hidden="true"></i> <p>Koneru Lakshmaiah Education Foundation - Student Activity Center | Designed & Developed by Coding School</p>
                 </span>
               </div>
               <div className="FooterThree-two">

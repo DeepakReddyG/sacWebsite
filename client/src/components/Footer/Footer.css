@@ -2,7 +2,13 @@
 
 
 
+.FooterComponent {
+    background-color: whitesmoke;
+    padding-top: 70px;
 
+    border-top: 2px solid rgb(225, 223, 223);
+    margin-top: 10px;
+}
 
 .FooterContainer hr {
     width: 92%;
@@ -53,6 +59,7 @@
 .FooterThree-two {
     width: 30%;
     text-align: right;
+    padding-bottom: 50px;
 }
 #copyright {
     font-size: 15px;
