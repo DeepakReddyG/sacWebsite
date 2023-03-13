@@ -206,7 +206,15 @@
 }
 
 
-
+/* scroll to top */
+#scrollToTop {
+    border: 2px solid black;
+    width: 10%;
+    color: red;
+    height: 7vh;
+    border-radius: 10px;
+    font-size: 15px;
+}
 
 
 /* /Frequently Asked Questions */
@@ -221,6 +229,7 @@
     color: white;
     font-size: 40px;
     display: inline;
+    z-index: 99;
 }
 .faq {
     height: 70vh;
@@ -243,3 +252,27 @@
 }
 
 
+/* quick links */
+.quicklinks-inner {
+    display: flex;
+    padding: 40px 0px 40px 0px;
+}
+
+.quicklinks-inner h3 {
+    font-weight: 800;
+    color: rgb(151, 0, 3);
+}
+.quicklinks-inner li {
+    list-style: none;
+    text-align: left;
+    margin: 15px 10px 10px 10px;
+    color: black;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.qls {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    
+}

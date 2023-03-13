@@ -15,6 +15,7 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 
+import ScrollToTop from "react-scroll-to-top"; 
 
 import Footer from '../../components/Footer/Footer';
 
@@ -74,7 +75,7 @@ const Home  = () => {
     <div className='HomeComponent'>
         <div className="HomeContainer">
 
-
+        <ScrollToTop  smooth id='scrollToTop' component={<p style={{ color: "rgb(151, 0, 3)" }}>Back to top</p>}></ScrollToTop>
 
             {/* --------Events Section-------- */}
             <div className="events">
@@ -333,12 +334,54 @@ const Home  = () => {
 
 
 
-            {/* Students at SAC */}
-            <div className="students">
-                <div className="students-inner">
-
-                </div>
+            <div className="quicklinks">
+              <div className="quicklinks-inner">
+                    <div className="quick-one">
+                        <h3>Technology Clubs</h3>
+                        <ul>
+                          <li><Link className='qls'>Coding School</Link></li>
+                          <li><Link className='qls'>Cyber Security</Link></li>
+                          <li><Link className='qls'>Automation</Link></li>
+                          <li><Link className='qls'>Robotics</Link></li>
+                          <li><Link className='qls'>Automobile</Link></li>
+                          <li><Link className='qls'>Game Development</Link></li>
+                        </ul>
+                    </div>
+                    <div className="quick-two">
+                        <h3>Liberal Arts</h3>
+                        <ul>
+                          <li><Link className='qls'>Music Club</Link></li>
+                          <li><Link className='qls'>Narthana Club</Link></li>
+                          <li><Link className='qls'>Fusion Club</Link></li>
+                          <li><Link className='qls'>Standup Comedy</Link></li>
+                          <li><Link className='qls'>Muse Arts</Link></li>
+                          <li><Link className='qls'>Dramatics</Link></li>
+                        </ul>
+                    </div>
+                    <div className="quick-three">
+                          <div className="quick-three-one">
+                            <h3>Innovation and Incubation</h3>
+                            <ul>
+                              <li><Link className='qls'>ACIC</Link></li>
+                              <li><Link className='qls'>Start in Collge</Link></li>
+                              <li><Link className='qls'>Ideas Hub</Link></li>
+                            </ul>
+                          </div>
+                    </div>
+                    <div className="quick-four">
+                    <h3>Society and Outreach</h3>
+                            <ul>
+                            <li><Link className='qls'>Smart Village Revolution</Link></li>
+                              <li><Link className='qls'>NSS</Link></li>
+                              <li><Link className='qls'>NSS</Link></li>
+                              <li><Link className='qls'>NCC</Link></li>
+                              <li><Link className='qls'>Safe Life</Link></li>
+                              <li><Link className='qls'>CEA</Link></li>
+                            </ul>
+                    </div>
+              </div>
             </div>
+            
             
         </div>
         <Footer></Footer>
