@@ -10,6 +10,8 @@
 
 .events {
     padding-bottom: 100px;
+    background-color: whitesmoke;
+    padding-top: 30px;
 }
 
 .events-heading h1 {
@@ -21,6 +23,7 @@
     font-size: 30px;
     font-weight: 100;
     margin-bottom: 60px;
+    color: rgb(151, 0, 3);
 }
 
 .events-inner {
@@ -51,6 +54,7 @@
     -webkit-backdrop-filter: blur(5px);
 
     color: white;
+
 }
 .events-one-one img {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -67,6 +71,7 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border: 1px solid white;
     padding: 10px;
+    background-color: white;
 }
 .events-one-two-one img{
     width: 100%;
@@ -94,6 +99,7 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border: 1px solid white;
     padding: 10px;
+    background-color: white;
 }
 .events-two-one-two {
     width: 50%;
@@ -128,3 +134,46 @@
 
     color: white;
 } 
+
+
+
+
+
+/* ---------------------------------- */
+.about {
+    padding: 10px 0px 100px 0px;
+}
+.about-heading {
+
+}
+.about-heading h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 60px;
+}
+
+.about-heading {
+
+}
+.about-heading h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(151, 0, 3);
+    width: 80%;
+    margin: auto;
+}
+
+.about-two {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.about-two-cmn {
+    width: 30%;
+}
+.counter {
+    font-size: 40px;
+    font-weight: 900;
+}

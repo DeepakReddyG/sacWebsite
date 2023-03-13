@@ -1,15 +1,25 @@
 import React from 'react';
 import '../Home/Home.css'; 
 
-const Home = () => {
+
+
+import CountUp, {startAnimation} from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor'; 
+
+
+
+const Home  = () => {
   return (
     <div className='HomeComponent'>
         <div className="HomeContainer">
 
+
+
+            {/* --------Events Section-------- */}
             <div className="events">
               <div className="events-heading">
                 <h1>News at SAC</h1>
-                <h3>Stories about people, research, and innovation across the Farm</h3>
+                <h3>Stories about people, research, and innovation across the center</h3>
               </div>
               <div className="events-inner">
                 <div className="events-one">
@@ -62,6 +72,107 @@ const Home = () => {
 
                     </div>
                 </div>
+              </div>
+            </div>
+
+            {/* --------------- End of Events Section -------------- */}
+
+
+
+            {/* -------- About Section -------- */}
+            <div className="about">
+              <div className="about-heading">
+                <h1>About the Center</h1>
+                <h3>designed to accommodate path-breaking ideas, problem-solving postulates, and artistic assertions, creating an environment that encourages innovation and experimentation</h3>
+              </div>
+              <div className="about-two">
+                <div className="about-two-one about-two-cmn">
+                  <div className="about-two-one-heading">
+                    <h2>Number of wings</h2>
+                  </div>
+                  <div className="about-two-one-counter counter">
+                    <CountUp start={0} duration={4} end={4} redraw={true}>
+                      {({ countUpRef, start }) => (
+                        <VisibilitySensor onChange={start} delayedCall>
+                          <span ref={countUpRef} />
+                        </VisibilitySensor>
+                      )}
+                    </CountUp>
+                  </div>
+                </div>
+                <div className="about-two-two about-two-cmn">
+                  <div className="about-two-two-heading">
+                    <h2>Student Clubs</h2>
+                  </div>
+                  <div className="about-two-two-counter counter">
+                    <CountUp start={0} duration={10} end={35} redraw={true}>
+                      {({ countUpRef, start }) => (
+                        <VisibilitySensor onChange={start} delayedCall>
+                          <span ref={countUpRef} />
+                        </VisibilitySensor>
+                      )}
+                    </CountUp>
+                  </div>
+                </div>
+                <div className="about-two-three about-two-cmn">
+                  <div className="about-two-three-heading">
+                    <h2>Faculty Mentors</h2>
+                  </div>
+                  <div className="about-two-three-counter counter">
+                    <CountUp start={0} duration={10} end={47} redraw={true}>
+                      {({ countUpRef, start }) => (
+                        <VisibilitySensor onChange={start} delayedCall>
+                          <span ref={countUpRef} />
+                        </VisibilitySensor>
+                      )}
+                    </CountUp>
+                  </div>
+                </div>
+                <div className="about-two-four about-two-cmn">
+                  <div className="about-two-four-heading">
+                    <h2>Student Leaders</h2>
+                  </div>
+                  <div className="about-two-four-counter counter">
+                    <CountUp start={0} duration={10} end={54} redraw={true}>
+                      {({ countUpRef, start }) => (
+                        <VisibilitySensor onChange={start} delayedCall>
+                          <span ref={countUpRef} />
+                        </VisibilitySensor>
+                      )}
+                    </CountUp>
+                  </div>
+                </div>
+
+                <div className="about-two-five about-two-cmn">
+                  <div className="about-two-five-heading">
+                    <h2>Actively Engaged Students</h2>
+                  </div>
+                  <div className="about-two-five-counter counter">
+                    <CountUp start={0} duration={10} end={314} redraw={true}>
+                      {({ countUpRef, start }) => (
+                        <VisibilitySensor onChange={start} delayedCall>
+                          <span ref={countUpRef} />
+                        </VisibilitySensor>
+                      )}
+                    </CountUp>
+                  </div>
+                </div>
+
+                <div className="about-two-six about-two-cmn">
+                  <div className="about-two-six-heading">
+                    <h2>Projects</h2>
+                  </div>
+                  <div className="about-two-six-counter counter">
+                    <CountUp start={0} duration={10} end={8} redraw={true}>
+                      {({ countUpRef, start }) => (
+                        <VisibilitySensor onChange={start} delayedCall>
+                          <span ref={countUpRef} />
+                        </VisibilitySensor>
+                      )}
+                    </CountUp>
+                  </div>
+                </div>
+
               </div>
             </div>
         </div>
