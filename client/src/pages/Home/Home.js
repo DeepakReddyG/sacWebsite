@@ -8,9 +8,68 @@ import CountUp, {startAnimation} from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor'; 
 import Slide from 'react-reveal/Slide';
 
+import { styled } from '@mui/material/styles';
+import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
+import MuiAccordion from '@mui/material/Accordion';
+import MuiAccordionSummary from '@mui/material/AccordionSummary';
+import MuiAccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+
+
+import Footer from '../../components/Footer/Footer';
+
+
 
 
 const Home  = () => {
+
+
+
+  const Accordion = styled((props) => (
+    <MuiAccordion disableGutters elevation={0} square {...props} />
+  ))(({ theme }) => ({
+    border: `1px solid ${theme.palette.divider}`,
+    '&:not(:last-child)': {
+      borderBottom: 0,
+    },
+    '&:before': {
+      display: 'none',
+    },
+  }));
+  
+  const AccordionSummary = styled((props) => (
+    <MuiAccordionSummary
+      expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
+      {...props}
+    />
+  ))(({ theme }) => ({
+    backgroundColor:
+      theme.palette.mode === 'dark'
+        ? 'rgba(255, 255, 255, .05)'
+        : 'rgba(0, 0, 0, .03)',
+    flexDirection: 'row-reverse',
+    '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
+      transform: 'rotate(90deg)',
+    },
+    '& .MuiAccordionSummary-content': {
+      marginLeft: theme.spacing(1),
+    },
+  }));
+  
+  const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
+    padding: theme.spacing(2),
+    borderTop: '1px solid rgba(0, 0, 0, .125)',
+  }));
+  const [expanded, setExpanded] = React.useState('panel1');
+
+    const handleChange = (panel) => (event, newExpanded) => {
+    setExpanded(newExpanded ? panel : false);
+    };
+
+
+
+
+
   return (
     <div className='HomeComponent'>
         <div className="HomeContainer">
@@ -196,9 +255,96 @@ const Home  = () => {
               </center>
 
             </div>
+
+
+          
+
+
+            {/* Frequently Asked Questions */}
+            <div className="faq">
+                <h1>Frequently asked questions</h1>
+                <div className="faqImage">
+                </div>
+                
+
+                <div className="faqInner">
+                    <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+                        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+                        <Typography>What is a coding club?</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                        <Typography>
+                            A coding club is a group of individuals who gather together to learn, share, and improve their coding skills. It's a place where you can meet like-minded people, work on projects together, and participate in coding challenges.
+                        </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+                        <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
+                        <Typography>Who can join a coding club?</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                        <Typography>
+                            Anyone can join a coding club, regardless of their age or experience level. Some clubs may have specific requirements or focus on certain programming languages, so be sure to check before joining.
+                        </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+                        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
+                        <Typography>What types of activities do coding clubs typically do?</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                        <Typography>
+                            Coding clubs can vary in their activities, but some common ones include working on coding projects, participating in coding challenges, attending workshops or presentations, and networking with other members.
+                        </Typography>
+                        </AccordionDetails>
+                    </Accordion>     
+                    <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+                        <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
+                        <Typography>Do I need to know how to code to join a coding club?</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                        <Typography>
+                            No, you don't need any prior coding experience to join a coding club. In fact, many clubs welcome beginners and offer resources to help them learn.
+                        </Typography>
+                        </AccordionDetails>
+                    </Accordion>   
+                    <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+                        <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
+                        <Typography>What programming languages do coding clubs typically focus on?</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                        <Typography>
+                            Coding clubs can focus on a variety of programming languages, depending on the interests of the members. Some common languages include Python, Java, JavaScript, and Ruby.
+                        </Typography>
+                        </AccordionDetails>
+                    </Accordion> 
+                    <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
+                        <AccordionSummary aria-controls="panel6d-content" id="panel6d-header">
+                        <Typography>How often do coding clubs typically meet?</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                        <Typography>
+                            Coding clubs can meet as frequently or infrequently as the members prefer. Some may meet weekly, while others may meet monthly or bi-monthly.
+                        </Typography>
+                        </AccordionDetails>
+                    </Accordion>                  
+                </div>
+            </div>
+
+
+
+            {/* Students at SAC */}
+            <div className="students">
+                <div className="students-inner">
+
+                </div>
+            </div>
             
         </div>
+        <Footer></Footer>
     </div>
+
+
   )
 }
 

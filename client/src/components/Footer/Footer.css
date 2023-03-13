@@ -8,6 +8,8 @@
 
     border-top: 2px solid rgb(225, 223, 223);
     margin-top: 10px;
+    position: absolute;
+
 }
 
 .FooterContainer hr {
@@ -52,7 +54,6 @@
 }
 .FooterThree-one p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 100;
     display: inline;
     font-weight: 320;
 }

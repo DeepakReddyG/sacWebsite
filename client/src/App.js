@@ -14,9 +14,8 @@ function App() {
     <div className="App">
       <NavBar></NavBar>
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<Home/>}></Route>
       </Routes>
-
     </div>
   );
 }
