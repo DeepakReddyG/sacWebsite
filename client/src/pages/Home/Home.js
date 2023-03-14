@@ -77,6 +77,30 @@ const Home  = () => {
 
         <ScrollToTop  smooth id='scrollToTop' component={<p style={{ color: "rgb(151, 0, 3)" }}>Back to top</p>}></ScrollToTop>
 
+
+            {/* main section in the page */}
+            <div className="main">
+
+             <div className="main-last">
+                <div className="main-last-inner">
+                  <a href="#">Explore more about Student Activity Center</a>
+                </div>
+              </div>
+            </div>
+
+            {/* Culture at Student Activity Center */}
+            <div className="culture">
+              <div className="culture-heading">
+                <h1>Culture at KLEF SAC</h1>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione sed illum odio non obcaecati ducimus rem ipsa! Veritatis facere quas dicta distinctio laborum. Harum, porro.</h3>
+              </div>
+              <div className="culture-inner">
+
+              </div>
+            </div>
+
+
+
             {/* --------Events Section-------- */}
             <div className="events">
               <div className="events-heading">

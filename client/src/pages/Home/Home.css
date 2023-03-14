@@ -7,6 +7,54 @@
 
 }
 
+.main {
+    position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 50px;
+  font-size: 20px;
+  z-index: -1;
+  height: 100vh;
+  background-color: whitesmoke;
+
+}
+.main-last {
+    position: absolute;
+    bottom: 0;
+}
+.main-last-inner {
+}
+.main-last-inner a {
+
+}
+
+.culture {
+    height: 100vh;
+    z-index: 99999;
+    background-color: white;
+    padding-top: 40px;
+}
+.culture-heading {
+
+}
+.culture-heading h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 60px;
+}
+.culture-heading h3 {
+    width: 70%;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: auto;
+    color: rgb(151, 0, 3);
+    font-size: 30px;
+    font-weight: 100;
+}
+
+
+
+
+
+
 
 .events {
     padding-bottom: 100px;
@@ -142,7 +190,7 @@
 /* ---------------------------------- */
 .about {
     padding: 10px 0px 100px 0px;
-    opacity: 0.9;
+    background-color: white;
 }
 .about-heading {
 
@@ -254,6 +302,7 @@
 /* quick links */
 .quicklinks {
     display: flex;
+    background-color: white;
 }
 .quicklinks-inner {
     display: flex;
@@ -279,6 +328,7 @@
     text-decoration: none;
     font-size: 20px;
     color: black;
+
 }
 .quick-image {
     text-align: center;
