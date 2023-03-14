@@ -380,6 +380,9 @@ const Home  = () => {
                             </ul>
                     </div>
               </div>
+              <div className="quick-image">
+                <a href="https://www.kluniversity.in/"><img src="https://i.ibb.co/YhMKv90/sac-logo-68af69157709144b2811.png" alt="" /></a>
+              </div>
             </div>
             
             

@@ -223,6 +223,8 @@
 .faq {
     padding-top: 50px;
     background-color: rgb(48, 12, 12);
+    border-bottom: 1px solid rgb(53, 51, 51);
+    padding-bottom: 70px;
 }
 
 .faq h1 {
@@ -231,10 +233,7 @@
     display: inline;
     z-index: 99;
 }
-.faq {
-    height: 70vh;
-    border-bottom: 1px solid rgb(53, 51, 51);
-}
+
 .faqImage {
     display: inline;
 
@@ -253,9 +252,15 @@
 
 
 /* quick links */
+.quicklinks {
+    display: flex;
+}
 .quicklinks-inner {
     display: flex;
     padding: 40px 0px 40px 0px;
+    margin-left: 5%;
+    gap: 10px;
+    width: 60%;
 }
 
 .quicklinks-inner h3 {
@@ -274,5 +279,13 @@
     text-decoration: none;
     font-size: 20px;
     color: black;
-    
+}
+.quick-image {
+    text-align: center;
+    width: 40%;
+}
+
+.quick-image img {
+    width: 70%;
+    margin-top: 150px;
 }
